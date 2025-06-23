@@ -1,10 +1,12 @@
 esphome:
   name: panasonic-ac-salon
+
+esp32:
   board: esp32dev
 
 wifi:
   ssid: Granada
-  password: VerySafePassword
+  password: XXXXXXXXX
 
 logger:
   level: DEBUG
@@ -13,6 +15,7 @@ logger:
 api:
 
 ota:
+  platform: esphome
 
 # Requires ESPHome 1.15.0+ for the even parity option
 uart:
