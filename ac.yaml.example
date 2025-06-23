@@ -1,11 +1,11 @@
 esphome:
-  name: panasonic-ac
+  name: panasonic-ac-salon
   platform: ESP32
-  board: nodemcu-32s
+  board: esp32dev
 
 wifi:
-  networks:
-  ap: {}
+  ssid: Granada
+  password: VerySafePassword
 
 logger:
   level: DEBUG
