@@ -6,7 +6,7 @@ esp32:
 
 wifi:
   ssid: Granada
-  password: XXXXXXXXX
+  password: XXXXXX
 
   # Optional manual IP
   manual_ip:
@@ -31,7 +31,7 @@ uart:
   parity: EVEN
 
 external_components:
-  source: github://DomiStyle/esphome-panasonic-ac
+  source: github://solutioon/esphome-panasonic-ac
   components: [panasonic_ac]
 
 
