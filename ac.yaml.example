@@ -8,6 +8,12 @@ wifi:
   ssid: Granada
   password: XXXXXXXXX
 
+  # Optional manual IP
+  manual_ip:
+    static_ip: 192.168.0.40
+    gateway: 192.168.0.1
+    subnet: 255.255.255.0
+
 logger:
   level: DEBUG
 #  baud_rate: 0 # ESP8266 only
