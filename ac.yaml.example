@@ -1,6 +1,5 @@
 esphome:
   name: panasonic-ac-salon
-  platform: ESP32
   board: esp32dev
 
 wifi:
@@ -56,4 +55,4 @@ climate:
       name: Panasonic AC Power Consumption
 
     # Useful when the ac does not report a current temperature (CZ-TACG1 only)
-    current_temperature_sensor: temperature_sensor_id
+    # current_temperature_sensor: temperature_sensor_id
