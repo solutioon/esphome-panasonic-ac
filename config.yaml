@@ -1,3 +1,4 @@
+
 esphome:
   name: panasonic-ac-salon
 
@@ -6,13 +7,14 @@ esp32:
 
 wifi:
   ssid: Granada
-  password: XXXXXX
+  password: XXXXXXXX
 
   # Optional manual IP
   manual_ip:
     static_ip: 192.168.0.40
     gateway: 192.168.0.1
     subnet: 255.255.255.0
+  ap: {}
 
 logger:
   level: DEBUG
@@ -31,7 +33,7 @@ uart:
   parity: EVEN
 
 external_components:
-  source: github://solutioon/esphome-panasonic-ac
+  source: github://DomiStyle/esphome-panasonic-ac
   components: [panasonic_ac]
 
 
@@ -53,15 +55,16 @@ climate:
 
     # Enable as needed
     eco_switch:
-      name: Panasonic AC Eco Switch
+       name: Panasonic AC Eco Switch
     econavi_switch:
-      name: Panasonic AC Econavi Switch
+       name: Panasonic AC Econavi Switch
     nanoex_switch:
-      name: Panasonic AC NanoeX Switch
+       name: Panasonic AC NanoeX Switch
     mild_dry_switch:
-      name: Panasonic AC Mild Dry Switch
+       name: Panasonic AC Mild Dry Switch
     current_power_consumption:
-      name: Panasonic AC Power Consumption
+       name: Panasonic AC Power Consumption
 
     # Useful when the ac does not report a current temperature (CZ-TACG1 only)
     # current_temperature_sensor: temperature_sensor_id
+
